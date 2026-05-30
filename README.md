@@ -5,7 +5,7 @@ ___
 
 ## Objetivo:
 
-O objetivo é preparar uma base para análises mais avançadas ou para alimentar um dashboard. Identificar problemas nos dados, tratar esses problemas com ferramentas adequadas e gerar estatísticas  e funções de agrupamento, para responder perguntas operacionais como:
+Preparar uma base para análises mais avançadas ou para alimentar um dashboard. Identificar problemas nos dados, tratar esses problemas com ferramentas adequadas e gerar estatísticas  e funções de agrupamento, para responder perguntas operacionais como:
 * Quem compra mais?
 * Quais categorias vendem mais?
 * Como variam as vendas ao longo do tempo?
