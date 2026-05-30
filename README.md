@@ -1,6 +1,6 @@
 # Projeto Varejo - Análise Exploratória de Dados (AED) aplicada ao varejo.
 
-Projeto desenvolvido com o objetivo de desenvolver uma análise exploratoria de dados de registros reais de compras. 
+Projeto irá desenvolver uma análise exploratoria de dados, de registros reais de compras. 
 ___
 
 ## Objetivo:
