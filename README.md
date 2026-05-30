@@ -17,6 +17,7 @@ O projeto utiliza a seguinte base de dados:
 * base_varejo_csv: Informações de Vendas do Varejo.
 
 A base de dados inicial apresenta:
+
 Registros/Linhas: 830000 
 Colunas:          14
 
