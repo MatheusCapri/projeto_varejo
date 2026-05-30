@@ -1,6 +1,10 @@
-# Projesto Varejo - Análise Exploratória de Dados (AED) aplicada ao varejo.
+# Projeto Varejo - Análise Exploratória de Dados (AED) aplicada ao varejo.
 
+<<<<<<< HEAD
 Projeto deve desenvolver uma análise exploratoria de dados, de registros reais de compras. 
+=======
+Projeto irá desenvolver uma análise exploratoria de dados, de registros reais de compras. 
+>>>>>>> 1661978af8f7fac91e239e85242b7d07048e5f14
 ___
 
 
@@ -20,6 +24,13 @@ ___
 O projeto utiliza a seguinte base de dados:
 * base_varejo_csv: Informações de Vendas do Varejo.
 
+<<<<<<< HEAD
+=======
+A base de dados inicial apresenta:
+
+Registros/Linhas: 830000 
+Colunas:          14
+>>>>>>> 1661978af8f7fac91e239e85242b7d07048e5f14
 
 
 A base de dados inicial apresenta:
@@ -33,7 +44,7 @@ Duplicatas totais:   96553
 Total de nulos:      3320000
 
 
-Insights: 
+Observações: 
 * 4 colunas estão sem nenhum dado → Serão ser removidas;
 * Existem dados duplicados → Serão excluídos, mantendo o registro mais recente;
 * Algumas colunas apresentam tipos de dados incompatíveis com seus conteúdos → Devem ser transformadas para o tipo correto.
@@ -68,5 +79,14 @@ A base de dados atual (após limpeza) apresenta:
 Registros/Linhas:   733447 
 Colunas:            10
 
+<<<<<<< HEAD
 Duplicatas totais:  0
 Total de nulos:     0
+=======
+A base de dados atual apresenta:
+Registros/Linhas: 733447 
+Colunas:          10
+
+Duplicatas totais: 0
+Total de nulos: 0
+>>>>>>> 1661978af8f7fac91e239e85242b7d07048e5f14
