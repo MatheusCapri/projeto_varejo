@@ -24,7 +24,7 @@ Colunas:          14
 Duplicatas totais: 96553
 Total de nulos: 3320000
 
-Insights: 
+Observações: 
 * 4 colunas estão sem nenhum dado → Serão ser removidas;
 * Existem dados duplicados → Serão excluídos, mantendo o registro mais recente;
 * Algumas colunas apresentam tipos de dados incompatíveis com seus conteúdos → Devem ser transformadas para o tipo correto.
