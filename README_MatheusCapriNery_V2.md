@@ -6,7 +6,7 @@ Projeto que desenvolve uma análise exploratória de dados de registros reais de
 
 ## Objetivo
 
-Preparar uma base para análises mais avançadas ou para alimentar um dashboard. Identificar problemas nos dados, tratar esses problemas com ferramentas adequadas e gerar estatísticas e funções de agrupamento, para responder perguntas operacionais como:
+Preparar uma base para análises mais avançadas ou para alimentar um dashboard. Identificar problemas nos dados, tratar esses problemas com ferramentas adequadas e gerar estatísticas e funções de agrupamento para responder perguntas operacionais como:
 
 - Quem compra mais?
 - Quais categorias vendem mais?
@@ -28,10 +28,10 @@ Preparar uma base para análises mais avançadas ou para alimentar um dashboard.
 | Nulos | 3.320.000 |
 
 **Observações:**
-- 4 colunas estão sem nenhum dado → serão removidas
+- 4 colunas estão sem nenhum dado → serão removidas pois não trazem nenhuma contribuição à análise
 - Existem dados duplicados → serão excluídos, mantendo o registro mais recente
-- Algumas colunas apresentam tipos incompatíveis → serão convertidas
-- Não foram encontradas categorias vazias em PR_CAT
+- A coluna data apresenta tipo de dado incompativel → será convertida
+- Foram encontradas categorias vazias em PR_CAT → serão substituidas por 'Sem Categoria'
 
 **Verificação dos tipos de dados:**
 
@@ -54,8 +54,8 @@ Preparar uma base para análises mais avançadas ou para alimentar um dashboard.
 
 - 4 colunas vazias removidas
 - Verificação de categorias vazias em PR_CAT: foram encontrados 3.228 registros com valor '#N/D', substituídos por 'Sem Categoria'
-- Duplicatas removidas mantendo o registro mais recente
-- Os dados da coluna CO_ID estão validos e foram mantidos, já que uma compra pode ter vários produtos, o que acaba repetindo o ID em algumas linhas
+- Duplicatas removidas mantendo o primeiro registro
+- Os dados da coluna CO_ID estão válidos e foram mantidos, já que uma compra pode ter vários produtos, o que acaba repetindo o ID em algumas linhas
 - Coluna DATA convertida de str para datetime
 
 **Base após limpeza:**
@@ -104,6 +104,7 @@ Explorar padrões de agrupamento com combinações para entender comportamento d
 
 
 * Vendas por categoria:
+
 | Categoria | Compras |
 |-----------|---------|
 | Alimentos	| 384197 |
@@ -116,6 +117,7 @@ Explorar padrões de agrupamento com combinações para entender comportamento d
 
 
 * Top 3 Produtos mais vendidos:
+
 | Posição | Produto | Vendas |
 |---------|---------|--------|
 | 1º | Presunto Cozido |12.719 |
@@ -124,6 +126,7 @@ Explorar padrões de agrupamento com combinações para entender comportamento d
 
 
 * Vendas por categoria de acordo com o gênero:
+
 | Categoria | Feminino | Masculino |
 |-----------|----------|-----------|
 | Alimentos | 200.274 | 183.923 |
@@ -154,12 +157,23 @@ Explorar padrões de agrupamento com combinações para entender comportamento d
 | Sem Categoria | 1.545 | 1.683 |
 
 
+## CGráfico de Vendas ao Longo do Tempo
+
+![Vendas ao Longo do Tempo](reports/vendas_por_mes.png)
+
+
 ## Conclusões
 
 **Insights**
 
-1 - Não existe uma diferênça tão relevante de consumo entre gêneros, sendo 52,1% do total compras de Mulheres e 47,9% compras de Homens. Porém as mulheres lideram com consistência e todas as categorias.
+1 - Não existe uma diferença tão relevante de consumo entre gêneros, sendo 52,1% do total d compras de mulheres e 47,9% compras de homens. Porém as mulheres lideram com consistência e todas as categorias.
+
 2 - Alimentos lideram com folga no quesito categoria, com mais da metade do total de vendas (52,4%). 
+
 3 - Os hábitos de consumo com relação ao gênero, levando em conta as categorias dos produtos, são muito parecidos. Não trazem uma diferença relevante entre homens e mulheres.
-4 - O consumo do grupo de pessoas com filho é maior em todas as categorias, entretanto o número de clientes sem filho é maior o que torna a quantidade proporcional de compras praticamente igual entre os dois perfis.
-5 - As categorias de Acessórios e Pet, estão com um volume baixo em relação à quantidade total de compras, pode indicar nichos à ser trabalhados para aumentar as vendas.
+
+4 - O consumo do grupo de pessoas com filho é maior em todas as categorias, entretanto o número de clientes sem filho é maior, o que torna a quantidade proporcional de compras praticamente igual entre os dois perfis.
+
+5 - As categorias de Acessórios e Pet, estão com um volume baixo em relação à quantidade total de compras, pode indicar nichos a serem trabalhados para aumentar as vendas.
+
+6 - De acordo com o gráfico 'Vendas ao Longo do Tempo', é possivel observar um padrão de sazonalidade ao longo do tempo, com queda nas vendas no final e no meio do ano e subida logo após essa época.
